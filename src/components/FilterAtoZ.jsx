@@ -33,6 +33,7 @@ const FilterAtoZ = (props) => {
               color={item.color}
               description={item.description}
               key={item.id}
+              id={item.id}
             />
         ))
       ) : (

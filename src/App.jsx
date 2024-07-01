@@ -1,13 +1,12 @@
-import React from 'react'
-import Pokemon from './components/Pokemon'
-import PokemonList from './components/PokemonList'
+import React from "react";
+import Routers from "./router/Routers";
 
 const App = () => {
   return (
     <div>
-      <Pokemon />
+      <Routers />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

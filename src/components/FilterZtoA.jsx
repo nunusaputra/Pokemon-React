@@ -32,6 +32,7 @@ const FilterZtoA = (props) => {
             description={item.description}
             color={item.color}
             key={item.id}
+            id={item.id}
           />
         ))
       ) : (

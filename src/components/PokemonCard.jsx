@@ -1,8 +1,9 @@
 import React from "react";
 import { colours } from "../assets/colours";
+import { Link } from "react-router-dom";
 
 const PokemonCard = (props) => {
-  const { name, types, imageUrl, color, description } = props;
+  const { id, name, types, imageUrl, color, description } = props;
   return (
     <div className="cards" style={{ background: color }}>
       <div className="card-img">
@@ -24,7 +25,9 @@ const PokemonCard = (props) => {
 
         <div className="description">
           <p>{description}</p>
-          <button style={{ backgroundColor: color}}>See Detail</button>
+          <Link to={`/pokemon-detail/${id}`}>
+            <button style={{ backgroundColor: color }}>See Detail</button>
+          </Link>
         </div>
       </div>
     </div>
