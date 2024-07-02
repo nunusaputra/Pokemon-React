@@ -23,6 +23,8 @@ const PokemonList = (props) => {
               description={item.description}
               key={item.id}
               id={item.id}
+              locations={item.locations}
+              abilities={item.abilities}
             />
           ))
         ) : (

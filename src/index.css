@@ -15,6 +15,36 @@
   background: #f2f8fc;
 }
 
+.container-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 5% 0 0;
+}
+
+.container-heading h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.container-heading span {
+  color: purple;
+  font-weight: 800;
+  padding: 3px 5px;
+  background-color: purple;
+  color: white;
+  border-radius: 20px 10px;
+  cursor: pointer;
+  box-shadow: 4px 4px 2px black
+}
+
+.container-heading p {
+  margin-top: 20px;
+}
+
 .pokemon-section {
   display: flex;
   flex-wrap: wrap;
@@ -82,10 +112,10 @@
   justify-content: center;
 }
 
-.description button {
-  width: 100%;
+.description .btn-see {
+  /* width: 100%; */
   margin: 5% 0 0;
-  padding: 8px 15px;
+  padding: 10px 15px;
   border-radius: 10px;
   border: 2px solid transparent;
   font-size: 15px;
@@ -102,7 +132,7 @@
 .search {
   display: flex;
   justify-content: center;
-  padding: 5% 0 0;
+  padding: 3% 0 0;
 }
 
 .search input {
@@ -292,6 +322,21 @@
   font-weight: 600;
 }
 
+.desc-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* align-items: center; */
+}
+
+.desc-icon .btn-save {
+  padding: 8px 15px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
 ::-webkit-scrollbar {
   width: 15px;
   background-color: #f2f8fc;
@@ -349,6 +394,12 @@
     }
     .detail-info-2 {
         margin-top: 0;
+    }
+    .container-heading h1 {
+      font-size: 40px;
+    }
+    .container-desc p {
+      font-size: 20px;
     }
 }
 
@@ -486,6 +537,9 @@
         font-weight: 800;
         border-radius: 10px;
     }
+    .container-heading h1 {
+      font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 554px) {
@@ -515,5 +569,8 @@
         top: 50%;
         background-color: black;
         transform: translateX(-50%);
+    }
+    .container-heading h1 {
+      font-size: 20px;
     }
 }
